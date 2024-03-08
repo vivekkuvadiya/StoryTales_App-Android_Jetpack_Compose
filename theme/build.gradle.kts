@@ -28,6 +28,8 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling)
     implementation(libs.material3)
+    implementation(libs.junit)
+    implementation(libs.androidx.junit.ktx)
     debugImplementation(libs.ui.tooling)
 
 }

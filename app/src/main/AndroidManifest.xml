@@ -23,11 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name="Service"/>
-
-        <receiver android:name="Broadcast-receiver"/>
-
     </application>
 
 </manifest>

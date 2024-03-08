@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="click_hear_to_reset">Click hear to reset</string>
+    <string name="dont_have_account">Don\'t have an account? \n Click Hear to Sign Up</string>
+    <string name="agree_to_terms">By logging in or signing up, you agree to our Trems and Condition</string>
+</resources>

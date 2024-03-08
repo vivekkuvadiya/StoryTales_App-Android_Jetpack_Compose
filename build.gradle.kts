@@ -10,8 +10,18 @@ plugins {
     alias(libs.plugins.com.android.application) apply false
     alias(libs.plugins.org.jetbrains.kotlin.android) apply false
     alias(libs.plugins.com.android.library) apply false
+    alias(libs.plugins.spotless) apply false
+    alias(libs.plugins.hilt) apply false
+    alias(libs.plugins.org.jetbrains.kotlin.jvm) apply false
+
 }
 true // Needed to make the Suppress annotation work for the plugins block
+
+buildscript {
+    dependencies {
+        classpath(libs.spotless)
+    }
+}
 
 fun BaseExtension.defaultConfig(){
     compileSdkVersion(34)
@@ -67,6 +77,9 @@ fun PluginContainer.applyDefaultConfig(project:Project){
 
 subprojects {
     project.plugins.applyDefaultConfig(project)
+    afterEvaluate {
+        project.apply("${project.rootDir}/spotless.gradle")
+    }
 
     tasks.withType<KotlinCompile>(){
         compilerOptions {

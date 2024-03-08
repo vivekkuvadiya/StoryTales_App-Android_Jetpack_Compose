@@ -31,6 +31,7 @@ android {
 dependencies {
 
     implementation(projects.theme)
+    implementation(projects.feature.auth)
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -46,4 +47,6 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    implementation (libs.androidx.navigation.compose)
 }
